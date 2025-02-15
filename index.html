@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-3</title>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/c2b16ddaa7.js" crossorigin="anonymous"></script>
     <!-- Tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -21,8 +23,78 @@
             font-family: "Sora", serif;
         }
      </style>
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'nav-bg': '#FFF9F4',
+                
+              }
+            }
+          }
+        }
+    </script>
+    
 </head>
 <body class="font-sora">
-    <h1>Hello</h1>
+    <!-- header -->
+    <header class=" mx-auto">
+        <!-- navbar -->
+        <nav class="px-4">
+            <div class="navbar bg-nav-bg">
+                <div class="navbar-start gap-3">
+                  <div><img src="c1-assets/logo-header.png" alt=""></div>
+                  <div class="hidden lg:flex"><h2 class="text-2xl">Browses<span class="text-yellow-400">4</span>Pets</h2></div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                      <li><a>Find a pet</a></li>
+                      <li><a>Breeds</a></li>
+                      <li><a>Contact us</a></li>
+                    </ul>
+                  </div>
+                <div class="navbar-end space-x-3">
+                    <a href=""><i class="fa-regular fa-bell hidden lg:flex"></i></a>
+                    <a href=""><i class="fa-solid fa-magnifying-glass hidden lg:flex"></i></a>
+                    <button class="hidden lg:flex">
+                        <a class="btn bg-nav-bg text-black border border-yellow-400 rounded-lg px-8">Login</a>
+                    </button>
+                    <button class="hidden lg:flex">
+                        <a class="btn bg-yellow-400 text-black px-8">Register</a>
+                    </button>
+                    <a href=""><i class="fa-solid fa-bars lg:hidden"></i></a>
+                  
+                </div>
+              </div>
+
+        </nav>
+
+        <!-- banner section -->
+         <!-- <section class="md:container mx-auto mt-24 hero-pattern">
+            <div class="items-start">
+                <div class="text-start">
+                  <div class="max-w-md">
+                    <h1 class="text-5xl font-bold">Hello there</h1>
+                    <p class="py-6">
+                      Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                      quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    </p>
+                    <button class="btn btn-primary">Get Started</button>
+                  </div>
+                </div>
+              </div> -->
+         </section>
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
