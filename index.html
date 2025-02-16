@@ -24,7 +24,7 @@
         }
         .font-adlam{
             font-family: "ADLaM Display", serif;
-            font-weight: bold;
+            
             color: black;
         }
         .big-cat{
@@ -33,6 +33,16 @@
           background-repeat: no-repeat; 
           background-position: bottom;
           width: 100%;
+        }
+        .cute-pet{
+          background-image: url(c1-assets/cute-pet-mid.png);
+          /* background-size: cover;  */
+          z-index: 10;
+          background-repeat: no-repeat; 
+          background-position:bottom right;
+          width: 100%;
+        }
+        .cute-pet-gradient{
         }
 
      </style>
@@ -410,7 +420,73 @@
        </div>
      </section>
 
-     
+     <!-- low price -->
+     <section class="md:container mx-auto my-24">
+        <h1 class="text-5xl text-black font-bold font-adlam pb-12">Everyday low Price</h1>
+        <div class="lg:flex  gap-5">
+          <div class="items-center rounded-lg lg:w-4/6 bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD]">
+            <div class=" flex  justify-between items-center lg:px-12 lg:py-3">
+              <div class=" pl-5 lg:pl-20">
+                <p class="lg:text-xl lg:pb-6">Under price</p>
+                <h3 class="text-2xl lg:pb-2  font-adlam">Pet Grooming Mitt</h3>
+                <h4 class="text-white lg:pb-4">(Easy Hair Removal)</h4>
+                <h1 class="text-6xl font-bold font-adlam">$7.99</h1>
+              </div>
+              <div>
+                <img src="c1-assets/cute-dog-mid.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg lg:pt-14 lg:w-2/6 cute-pet bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A]">
+            <div>
+            <h1 class="text-2xl pl-4  lg:pl-12 lg:pb-2 font-bold font-adlam">T-Shirt for Dogs</h1>
+            <h1 class="text-6xl pl-4 lg:pl-12 text-yellow-300  font-adlam">$7.99</h1>
+            </div>
+            <div class="items-end">
+            <img  src="c1-assets/cute-pet-mid.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- floating card  -->
+        <div class="relative mt-24">
+          <div
+          class=" flex w-full flex-col items-center justify-center gap-28 rounded-2xl bg-[#FFF9F4] px-6 py-8 shadow-xl lg:flex-row lg:px-25 lg:py-13 lg:shadow-xl"
+        >
+          <!-- pet image  -->
+          <div>
+            <img src="./c1-assets/cute-pet-mid.png" alt="" class="w-full" />
+          </div>
+
+          <!-- input form  -->
+          <div class="flex  flex-col gap-4 text-center lg:text-left">
+            <h2
+              class="text-xl font-bold font-adlam text-black lg:text-4xl lg:font-semibold lg:!text-dark"
+            >
+            Get Pawsome News!
+            </h2>
+            <p class="lg:text-xl">
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+            <div>
+              <input
+                type="text"
+                placeholder="Enter email...."
+                class="input input-lg rounded-lg border-none bg-white outline-none focus:outline-green lg:input-xl"
+              />
+            </div>
+            <div>
+              <button
+                class="rounded-lg  px-6 py-2 btn bg-yellow-400 text-black duration-150 hover:cursor-pointer hover:bg-greenDark md:px-7.5 md:py-2.5 md:text-xl"
+              >
+                <a href="">Subscribe</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+    
+    
     </main>
 
     <footer>
